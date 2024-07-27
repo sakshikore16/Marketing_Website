@@ -1,20 +1,26 @@
 import React, { useEffect, useState } from 'react';
 
-const Counter = ({ end, duration }) => {
-  const [count, setCount] = useState(0);
+const Counter = ({ start, end, duration }) => {
+  const [count, setCount] = useState(start);
 
   useEffect(() => {
-    let start = 0;
-    const incrementTime = Math.floor(duration / end);
+    const range = end - start;
+    const incrementTime = 10; // Set the interval time in milliseconds
+    const totalIncrements = Math.floor(duration / incrementTime);
+    const increment = Math.ceil(range / totalIncrements); // Calculate increment value based on total increments
 
     const timer = setInterval(() => {
-      start += 1;
-      setCount(start);
-      if (start === end) clearInterval(timer);
+      setCount(prevCount => {
+        if (prevCount + increment >= end) {
+          clearInterval(timer);
+          return end;
+        }
+        return prevCount + increment;
+      });
     }, incrementTime);
 
     return () => clearInterval(timer);
-  }, [end, duration]);
+  }, [start, end, duration]);
 
   return (
     <div className="text-4xl font-bold text-center">
