@@ -51,19 +51,19 @@ const Cases = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-6">
         <div className="h-[120px] px-[20px] py-10 bg-white rounded-[20px] shadow-card border border-zinc-900 flex flex-col justify-center items-center text-black">
-          <Counter end={62713} duration={5000} />
+          <Counter start={10000} end={62713} duration={4000} />
           <p className="text-center">Qualified Leads Generated</p>
         </div>
         <div className="h-[120px] px-[20px] py-10 bg-white rounded-[20px] shadow-card border border-zinc-900 flex flex-col justify-center items-center text-black">
-          <Counter end={96256} duration={5000} />
+          <Counter start={20000} end={96256} duration={3800} />
           <p className="text-center">Total Amount Of Reach Generated for Brands</p>
         </div>
         <div className="h-[120px] px-[20px] py-10 bg-white rounded-[20px] shadow-card border border-zinc-900 flex flex-col justify-center items-center text-black">
-          <Counter end={4526510} duration={5000} />
+          <Counter start={5000} end={52651} duration={4100} />
           <p className="text-center">E-commerce Transactions</p>
         </div>
         <div className="h-[120px] px-[20px] py-10 bg-white rounded-[20px] shadow-card border border-zinc-900 flex flex-col justify-center items-center text-black">
-          <Counter end={115622} duration={5000} />
+          <Counter start={30000} end={115622} duration={3700} />
           <p className="text-center">Average Brand Engagement</p>
         </div>
       </div>
