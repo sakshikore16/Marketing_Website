@@ -37,7 +37,7 @@ const NavBar = () => {
         <Container>
           <div className="flex flex-wrap items-center justify-between mx-auto py-3">
             <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-              <img src="/logo.png" className="h-20" alt="Logo" /> 
+              <img src="/logo.png" className="h-12" alt="Logo" /> 
             </a>
             <button
               data-collapse-toggle="navbar-default"
