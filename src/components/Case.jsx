@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from './Container';
 import Topic from './Topic';
-import Counter from './Counter'; // Import the Counter component
+import Counter from './Counter';
 
 const Cases = () => {
   return (
