@@ -1,56 +1,64 @@
 [
     {
-        "id": 1,
-        "name1": "Search engine",
-        "name2": "optimization",
-        "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-        "arrow": "./services/ag.svg",
-        "link": "./",
-        "image": "./services/01.svg"
+      "id": 1,
+      "name1": "Search engine",
+      "name2": "optimization",
+      "background": "p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black text-black",
+      "arrow": "./services/ag.svg",
+      "link": "./",
+      "image": "./services/01.svg",
+      "details": "SEO is the process of enhancing a website to increase its visibility on search engine results pages (SERPs). This involves optimizing content, keywords, and technical aspects to attract organic traffic."
+
     },
     {
-        "id": 2,
-        "name1": "Pay-per-click",
-        "name2": "advertising",
-        "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-        "arrow": "./services/ag.svg",
-        "link": "./",
-        "image": "./services/02.svg"
+      "id": 2,
+      "name1": "Pay-per-click",
+      "name2": "advertising",
+      "background": "p-12 bg-lime rounded-[45px] shadow-card border border-black text-black",
+      "arrow": "./services/ag.svg",
+      "link": "./",
+      "image": "./services/02.svg",
+      "details": "PPC is a digital advertising model where advertisers pay a fee each time their ad is clicked. It allows businesses to bid for ad placement in a search engine's sponsored links, driving targeted traffic to their websites."
     },
     {
-        "id": 3,
-        "name1": "Social Media",
-        "name2": "Marketing",
-        "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-        "arrow": "./services/aw.svg",
-        "link": "./",
-        "image": "./services/03.svg"
+      "id": 3,
+      "name1": "Social Media",
+      "name2": "Marketing",
+      "background": "p-12 bg-black rounded-[45px] shadow-card border border-black text-white",
+      "arrow": "./services/aw.svg",
+      "link": "./",
+      "image": "./services/03.svg",
+      "details": "Social media marketing involves promoting products or services through platforms like Facebook, Instagram, and Twitter. It includes creating and sharing content, engaging with followers, and running paid ad campaigns to build brand awareness and drive conversions."
     },
     {
-        "id": 4,
-        "name1": "Email",
-        "name2": "Marketing",
-        "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-        "arrow": "./services/ag.svg",
-        "link": "./",
-        "image": "./services/04.svg"
+      "id": 4,
+      "name1": "Email",
+      "name2": "Marketing",
+      "background": "p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black text-black",
+      "arrow": "./services/ag.svg",
+      "link": "./",
+      "image": "./services/04.svg",
+      "details": "Email marketing is the practice of sending targeted emails to a group of subscribers to promote products, share updates, or nurture customer relationships. It aims to engage recipients and encourage actions such as purchases or website visits."
     },
     {
-        "id": 5,
-        "name1": "Content",
-        "name2": "Creation",
-        "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-        "arrow": "./services/ag.svg",
-        "link": "./",
-        "image": "./services/05.svg"
+      "id": 5,
+      "name1": "Content",
+      "name2": "Creation",
+      "background": "p-12 bg-lime rounded-[45px] shadow-card border border-black text-black",
+      "arrow": "./services/ag.svg",
+      "link": "./",
+      "image": "./services/05.svg",
+      "details": "Content creation is the process of generating valuable and relevant content, such as blog posts, videos, and infographics, to attract and engage an audience. High-quality content helps build brand authority and drive traffic to websites."
     },
     {
-        "id": 6,
-        "name1": "Analytics and",
-        "name2": "Tracking",
-        "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-        "arrow": "./services/aw.svg",
-        "link": "./",
-        "image": "./services/06.svg"
+      "id": 6,
+      "name1": "Analytics and",
+      "name2": "Tracking",
+      "background": "p-12 bg-black rounded-[45px] shadow-card border border-black text-white",
+      "arrow": "./services/aw.svg",
+      "link": "./",
+      "image": "./services/06.svg",
+      "details": "Analytics and tracking involve collecting and analyzing data to measure the performance of marketing efforts. Tools like Google Analytics help businesses understand user behavior, track conversions, and optimize strategies for better results."
     }
-]
+  ]
+  
