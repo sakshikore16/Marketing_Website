@@ -1,61 +1,62 @@
 import React from 'react';
-import Container from '../components/Container';
-import Layout from '../layouts/Layout';
-import Team from '../components/Team';
+import Container from './Container';
+import Topic from './Topic';
+import Counter from './Counter';
 
-const AboutPage = () => {
+const Cases = () => {
   return (
-    <Layout title="Welcome to My site">
-      <main className="space-y-20">
-        <Container>
-          <div className="relative flex flex-col-reverse items-center md:flex-row" id="hero">
-            <div className="row items-center py-5 md:pb-20 md:pt-10">
-              <div className="text-center space-y-10">
-                <h2 className="text-5xl font-medium leading-none md:text-6xl">
-                  We Navigate the <br /> digital landscape <br /> for success
-                </h2>
-                <p className="mt-6 mb-8 text-xl font-normal leading-7 sm:mb-12">
-                  Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
-                </p>
-                <a
-                  className="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
-                  rel="noopener noreferrer"
-                  href="https://www.instagram.com/digitalloopmarketing/"
-                  target="_blank"
-                >
-                  <h2 className="text-center text-xl font-normal leading-7">Book a consultation</h2>
-                </a>
-              </div>
+    <Container>
+      <div className="relative flex flex-col items-center md:flex-row" id="projects">
+        <Topic
+          title="Case Studies"
+          description="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
+        />
+      </div>
+
+      <div className="w-full p-12 bg-zinc-900 rounded-[45px] justify-start items-start gap-16 inline-flex text-white">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 divide-x-0 md:divide-x divide-y md:divide-y-0">
+          <div className="flex-col items-start gap-5 inline-flex px-2 md:px-6 py-6 md:py-2">
+            <div className="w-full text-lg font-normal">
+              For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.
             </div>
           </div>
-          
-          <div className="flex-row items-center">
-            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6">
-              <div className="p-4 grayscale transition duration-200 hover:grayscale-0">
-                <img src="./clients/01.svg" className="h-12 w-auto mx-auto" loading="lazy" alt="client logo" />
-              </div>
-              <div className="p-4 grayscale transition duration-200 hover:grayscale-0">
-                <img src="./clients/02.svg" className="h-12 w-auto mx-auto" loading="lazy" alt="client logo" />
-              </div>
-              <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-                <img src="./clients/03.svg" className="h-9 w-auto m-auto" loading="lazy" alt="client logo" />
-              </div>
-              <div className="p-4 grayscale transition duration-200 hover:grayscale-0">
-                <img src="./clients/04.svg" className="h-12 w-auto mx-auto" loading="lazy" alt="client logo" />
-              </div>
-              <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-                <img src="./clients/05.svg" className="h-8 w-auto m-auto" loading="lazy" alt="client logo" />
-              </div>
-              <div className="p-4 grayscale transition duration-200 hover:grayscale-0">
-                <img src="./clients/06.svg" className="h-12 w-auto mx-auto" loading="lazy" alt="client logo" />
-              </div>
+          <div className="flex-col items-start gap-5 inline-flex px-2 md:px-6 py-6 md:py-2">
+            <div className="w-full text-lg font-normal">
+              For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.
             </div>
           </div>
-        </Container>
-        <Team />
-      </main>
-    </Layout>
+          <div className="flex-col items-start gap-5 inline-flex px-2 md:px-6 py-6 md:py-2">
+            <div className="w-full text-lg font-normal">
+              For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative flex flex-col items-center md:flex-row pt-16">
+        <Topic title="Results" description="The Results that We have delivered to our Clients" />
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-6">
+        <div className="h-[120px] px-[20px] py-10 bg-white rounded-[20px] shadow-card border border-zinc-900 flex flex-col justify-center items-center text-black">
+          <Counter start={10000} end={62713} duration={4000} />
+          <p className="text-center">Qualified Leads Generated</p>
+        </div>
+        <div className="h-[120px] px-[20px] py-10 bg-white rounded-[20px] shadow-card border border-zinc-900 flex flex-col justify-center items-center text-black">
+          <Counter start={20000} end={96256} duration={3800} />
+          <p className="text-center">Total Amount Of Reach Generated for Brands</p>
+        </div>
+        <div className="h-[120px] px-[20px] py-10 bg-white rounded-[20px] shadow-card border border-zinc-900 flex flex-col justify-center items-center text-black">
+          <Counter start={5000} end={52651} duration={4100} />
+          <p className="text-center">E-commerce Transactions</p>
+        </div>
+        <div className="h-[120px] px-[20px] py-10 bg-white rounded-[20px] shadow-card border border-zinc-900 flex flex-col justify-center items-center text-black">
+          <Counter start={30000} end={115622} duration={3700} />
+          <p className="text-center">Average Brand Engagement</p>
+        </div>
+      </div>
+    </Container>
   );
 };
 
-export default AboutPage;
+export default Cases;
