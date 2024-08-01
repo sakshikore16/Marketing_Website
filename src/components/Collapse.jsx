@@ -23,7 +23,7 @@ const CollapseSection = ({ label, children }) => {
           </div>
         </div>
         <div className={`shadow-card rounded-b-3xl bg-zinc-100 px-4 overflow-hidden transition-max-height ease duration-500 ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
-          <p className="text-justify text-black p-10">
+          <p className="text-justify text-blue-500 p-12">  {/* Changed text color to blue */}
             {children}
           </p>
         </div>
