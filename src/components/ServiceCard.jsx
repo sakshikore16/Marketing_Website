@@ -8,12 +8,20 @@ const ServiceCard = ({ name1, name2, image, details, background, arrow }) => {
   };
 
   return (
-    <div className={`relative ${background}`} style={{ height: isOpen ? '450px' : '300px', transition: 'height 0.5s ease' }}>
+    <div 
+      className={`relative ${background}`} 
+      style={{ 
+        height: isOpen ? '450px' : '300px', 
+        transition: 'height 0.5s ease', 
+        backgroundColor: 'lightgrey', // Container background color set to black
+        color: 'black' // Set default text color to white
+      }}
+    >
       <div className="flex flex-col justify-between h-full">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-3xl font-semibold">{name1}</h2>
-            <h2 className="text-3xl font-semibold">{name2}</h2>
+            <h2 className="text-3xl font-semibold">{name1}</h2> {/* Text color white by default */}
+            <h2 className="text-3xl font-semibold">{name2}</h2> {/* Text color white by default */}
           </div>
           <div>
             <img src={image} alt="service" className="h-40 w-40 object-contain" />
@@ -28,7 +36,13 @@ const ServiceCard = ({ name1, name2, image, details, background, arrow }) => {
           />
         </div>
         {isOpen && (
-          <div className="mt-4 bg-white p-4 rounded-b-3xl shadow-md transition-all duration-500 text-black">
+          <div 
+            className="mt-4 p-4 rounded-b-3xl shadow-md transition-all duration-500"
+            style={{
+              backgroundColor: 'black', // Details box background color set to grey
+              color: 'lightblue' // Details text color set to blue
+            }}
+          >
             <p>{details}</p>
           </div>
         )}
